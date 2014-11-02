@@ -4,8 +4,6 @@ rawdata=sys.argv[1]
 outfolder="resources"
 
 
-#chrom,feature,start,end=numpy.loadtxt(rawdata, unpack=True, dtype='str', usecols = (0,2,3,4))
-
 
 #READ THE SPECIFIED COLUMNS FROM THE RAW TEXT FILE
 #THEY ARE THE CHROMOSOME, FEATURE, START, AND END
@@ -18,7 +16,6 @@ numpy.savetxt(tableout, table, fmt='%s')
 
 #THIS SECTION IS FOR EXTRACTING TRANSCRIPT IDS
 table2=rawdata
-
 
 transcript_id=[]
 with open(table2) as input:
